@@ -2,6 +2,12 @@
 Scrapbox to Markdown for @mizdra
 
 ## How to develop
+
+### Setup
+```
+$ go mod tidy
+```
+
 ### Testing
 
 ```console
