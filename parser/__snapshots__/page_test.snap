@@ -2,3 +2,44 @@
 [TestExample - 1]
 Hello World
 ---
+
+[TestParsePage/basic - 1]
+parser.Page{
+    title: "title",
+    lines: {
+        {text:"title"},
+        {text:"body1"},
+        {text:"body2"},
+    },
+}
+---
+
+[TestParsePage/trailing_newline - 1]
+parser.Page{
+    title: "title",
+    lines: {
+        {text:"title"},
+        {text:"body1"},
+        {},
+    },
+}
+---
+
+[TestParsePage/title_only - 1]
+parser.Page{
+    title: "title",
+    lines: {
+        {text:"title"},
+    },
+}
+---
+
+[TestParsePage/empty_title - 1]
+parser.Page{
+    title: "",
+    lines: {
+        {},
+        {text:"body1"},
+    },
+}
+---
